@@ -7,17 +7,18 @@ alert("¡Comenzamos!")
 //A Jugar!
 
 function jugarAdivinaLaPalabra() {
-    let palabraAleatoria = "coder"; // palabra secreta a adivinar
+    let palabraAleatoria = "river"; // palabra secreta a adivinar
     let errores = 0; // número de errores
-    let maxerrores = 7; //limite de errores permitidos
-    let palabraCorrecta = "_____"; // espacio para guardar letras adivinadas y formar palabra secreta
-
+    let maxerrores = 6; //limite de errores permitidos
     let largoPalabraAleatoria = palabraAleatoria.length; // cantidad de caracteres de la palabra
+    let palabraCorrecta = "_".repeat(largoPalabraAleatoria); // espacio para guardar letras adivinadas y formar palabra secreta
+
+    
     alert("La palabra a adivinar tiene " + largoPalabraAleatoria + " letras\n" + palabraCorrecta);
 
-    let letrasAdivinadas = {}; // objeto para registrar letras adivinadas
+    let letrasAdivinadas = {}; // objeto para guardar letras adivinadas
 
-    // Inicializar letras adivinadas
+    // Chequeo de letras adivinadas
     for (let i = 0; i < largoPalabraAleatoria; i++) {
         letrasAdivinadas[palabraAleatoria[i]] = false;
     }
