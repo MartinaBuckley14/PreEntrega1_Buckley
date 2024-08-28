@@ -7,7 +7,7 @@ alert("¡Comenzamos!")
 //A Jugar!
 
 function jugarAdivinaLaPalabra() {
-    let palabraAleatoria = "river"; // palabra secreta a adivinar
+    let palabraAleatoria = "fotosintesis"; // palabra secreta a adivinar
     let errores = 0; // número de errores
     let maxerrores = 6; //limite de errores permitidos
     let largoPalabraAleatoria = palabraAleatoria.length; // cantidad de caracteres de la palabra
